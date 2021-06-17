@@ -6,4 +6,4 @@ The volume of distribution (V\ :sub:`d`\) is a pharmacokinetic parameter represe
 Volume of distribution is proportional to the dose of administration (Dose) and is inversely proportional to the plasma concentration (Conc).
 
 .. math::
-    V_d \propto \frac{Dose}{Conc}
+    V_d = \frac{Dose}{Conc}
