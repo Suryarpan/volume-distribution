@@ -14,8 +14,8 @@ The data ought to be in .csv format. The delimeter should be a comma (,). The fi
 
 In order to use the program, it has to be made sure that the data consists of the above written headings.
 
-.. warning::
-   The units of the Dose etc must not be included the headings. One should not use 'Dose(mg)' or like in order to use.
+.. caution::
+   The units of the headings must not be included the headings.
 
 Headings
 =========
@@ -33,3 +33,17 @@ A sample data table is like followed
    500, 0.500, 3
    500, 0.250, 6
    500, 0.079, 11
+
+.. caution::
+   Tables, like the following, holding units of headers cannot be used.
+
+   .. csv-table::
+      :header: Dose :math:`(mg)`, Conc :math:`({\\mu}g/mL)`, Time :math:`(hr)`
+
+      500, 0.794, 1
+      500, 0.500, 3
+      500, 0.250, 6
+      500, 0.079, 11
+
+Errors
+======

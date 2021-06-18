@@ -7,3 +7,5 @@ Volume of distribution is proportional to the dose of administration (Dose) and 
 
 .. math::
     V_d = \frac{Dose}{Conc}
+
+Generally, volume of distribution is the V\ :sub:`d` \ value after the equilibrium occurs.
