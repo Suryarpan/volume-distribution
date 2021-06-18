@@ -24,15 +24,28 @@ Headings
 #. :Concentration: The Concentration of the drug will decrease with time due to clearence from body. If more than one doses are involved, then there will be a spike in concentration after the next doe is administered.
 #. :Time: Time generally starts from 1hr after the administretion of dose. It goes on until the last dose has been cleared.
 
+.. note::
+   The unit we are currently compatible is
+
+   * Dose: :math:`mg`
+   * Conc: :math:`ng/mL`
+   * Time: :math:`hr`
+
 A sample data table is like followed
 
 .. csv-table::
    :header: Dose, Conc, Time
 
-   500, 0.794, 1
-   500, 0.500, 3
-   500, 0.250, 6
-   500, 0.079, 11
+   0.02, 0, 0
+   0.02, 120.05, 0.5
+   0.02, 126.01, 1
+   0.02, 119.50, 2
+   0.02, 102.69, 3
+   0.02, 70.68, 4
+   0.02, 41.66, 6
+   0.02, 42.24, 8
+   0.02, 32.59, 10
+   0.02, 7.63, 24
 
 .. caution::
    Tables, like the following, holding units of headers cannot be used.
@@ -44,6 +57,3 @@ A sample data table is like followed
       500, 0.500, 3
       500, 0.250, 6
       500, 0.079, 11
-
-Errors
-======

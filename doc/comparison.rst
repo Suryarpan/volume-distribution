@@ -9,7 +9,7 @@ Known data is a database containing names and related V\ :sub:`d` \ values of va
 .. csv-table::
     :header: File type, Name Data, :math:`V_d` Data
 
-    .csv, Name, V / V_d
+    csv, Name, V / V_d
 
 .. caution::
     Entertaining other headings will not work.

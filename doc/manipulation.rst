@@ -1,10 +1,15 @@
 Manipulation of Volume Distribution
 ***********************************
 
-After the data is read, the values of volume distribution is calculated by the help of the below written formula:
+The Volume of Distribution is calculated in the below written fashion:
 
-.. math::
-    V_d = \frac{Dose}{Conc}
+Manipulating Necessary Data
+===========================
 
-* :Dose: Dose is the dose administered
-* :Conc: Conc is the concentration of drug in plasma after certain time.
+#. The :math:`X` is taken from the DoseData.
+#. The lnConcData is made by applying :math:`log` to each element of ConcData.
+#. The ConcTimeData is made by multiplying ConcData with TimeData.
+#. The :math:`k_{el}` is calculated by linear regression
+
+Calculating Volume Distribution
+===============================

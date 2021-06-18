@@ -7,7 +7,7 @@
 Distribution of Drug Volume
 ###########################
 
-Volume Distribution is a pharmokinetical parameter for drugs. With the help of the parameter, one can have a clear insight to various properties of drug like lipophilicity, pH etc. The program will generate a Volume Distribution curve.
+Volume Distribution is a pharmacokinetical parameter for drugs. With the help of the parameter, one can have a clear insight to various properties of drug like lipophilicity, pH etc. The program will generate a Volume Distribution curve with time. Also the volume distribution of a certain sample can be compared with some known samples.
 
 
 

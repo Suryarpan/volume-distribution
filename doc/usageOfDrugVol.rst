@@ -1,5 +1,8 @@
 Usage of Volume Distribution
-*******************************
+****************************
+
+General Usage
+=============
 The Volume Distribution values can be used to have an insight for certain things like:
 
 :pH: pH values of drugs depends on many factors. We can predict the pH nature of drug, in a gross level, by looking at the values of volume distribution.
@@ -11,3 +14,9 @@ The Volume Distribution values can be used to have an insight for certain things
 
     * :Lipophilic: A higher value of volume distribution indicates lipophilicity of the drug.
     * :Lipophobic: A lower value of volume distribution indicates lipophobicity of the drug.
+
+How To Use This program
+=======================
+
+#. :Curve: For a certain element, if plasma concentraion in various times can be provided, the from the Conc vs time curve, one can find the best fit compartmental model from the drug.
+#. :Value: Volume distribution value can be compared with some known drugs in order to have a greater insight.
