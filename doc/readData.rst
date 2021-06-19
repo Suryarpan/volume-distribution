@@ -36,7 +36,6 @@ A sample data table is like followed
 .. csv-table::
    :header: Dose, Conc, Time
 
-   0.02, 0, 0
    0.02, 120.05, 0.5
    0.02, 126.01, 1
    0.02, 119.50, 2
@@ -57,3 +56,7 @@ A sample data table is like followed
       500, 0.500, 3
       500, 0.250, 6
       500, 0.079, 11
+
+.. note::
+   Concentration and Time must not start from 0. This will raise problems, is discussed in calculation part.
+   
