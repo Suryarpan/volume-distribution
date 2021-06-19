@@ -4,7 +4,7 @@ from printError import printErr
 
 
 def csvReader(filename: str, delimiter: str = ','):
-    """Reads a properly formatted CV file
+    """Reads a properly formatted CSV file
 
     :param filename: Name of CSV file to read from
     :type filename: str
