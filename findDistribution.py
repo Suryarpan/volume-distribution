@@ -2,6 +2,7 @@ import numpy as np
 from scipy import stats
 from scipy import integrate
 
+
 def findDistribution(DoseData, ConcData, TimeData):
     """Finds the Volume of distribution
 
@@ -29,5 +30,3 @@ def findDistribution(DoseData, ConcData, TimeData):
     vSs = ((dose)/(areaConcTime)) * meanResidenceTime
 
     return vArea, vSs, k_el
-
-
