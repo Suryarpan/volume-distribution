@@ -60,3 +60,10 @@ A sample data table is like followed
 .. note::
    Concentration and Time must not start from 0. This will raise problems, is discussed in calculation part.
    
+An insight to Function Used
+===========================
+
+A custom function was made to take the data from the csv file. Details are given below:
+
+.. automodule:: reader
+   :members:

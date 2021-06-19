@@ -1,32 +1,17 @@
-import numpy as np
-from scipy import stats
-from scipy import integrate
+from compData import compData
 
 
-def findDistribution(DoseData, ConcData, TimeData):
-    """Finds the Volume of distribution
+def findDistribution(readerData: compData):
+    """Calculates the volume distribution and elemination constant by the help of compData methods
 
-    :param DoseData: Dose administered
-    :type DoseData: numpy.ndarray
-    :param ConcData: Concentration of drug is plasma
-    :type ConcData: numpy.ndarray
-    :param TimeData: Time
-    :type TimeData: numpy.ndarray
-    :return: Areal volume distribution, Steady state volume distribution
-    :rtype: float
+    :param readerData: The data returned by reader
+    :type readerData: compData
+    :return: Areal Volume Distribution, Steady State Volume Distribution, Elimination Constant
+    :rtype: numpy.float64
     """
-    # Manipulating Necessary Parameters
-    dose = DoseData[0]
-    lnConcData = np.log(ConcData)
-    ConcTimeData = ConcData * TimeData
-    res = stats.linregress(TimeData, lnConcData)
-    k_el = res.slope
-    areaConcTime = integrate.trapezoid(ConcData, TimeData)
-    areaConcTimeTime = integrate.trapezoid(ConcTimeData, TimeData)
-    meanResidenceTime = areaConcTimeTime/areaConcTime
 
-    # Calculating Volume Distribution
-    vArea = (dose)/(k_el * areaConcTime)
-    vSs = ((dose)/(areaConcTime)) * meanResidenceTime
+    k_el = readerData.elimConst()
+    vArea = readerData.arealVolDist()
+    vSs = readerData.sdStVolDist()
 
     return vArea, vSs, k_el

@@ -18,7 +18,8 @@ Volume Distribution is a pharmacokinetical parameter for drugs. With the help of
    basics
    usageOfDrugVol
    readData
-   manipulation
+   generatedClass
+   calculation
    plot
    comparison
 
