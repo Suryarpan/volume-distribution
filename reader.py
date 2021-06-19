@@ -1,6 +1,6 @@
 import pandas as pd
-import numpy as np
 from printError import printErr
+from compData import compData
 
 
 def csvReader(filename: str, delimiter: str = ','):
@@ -12,7 +12,7 @@ def csvReader(filename: str, delimiter: str = ','):
     :type delimiter: str, optional
     :raises KeyError: If CSV file header is not properly formatted
     :return: Dose Data, Concentration Data, Time Data
-    :rtype: numpy.ndarray
+    :rtype: compData
     """
     try:
         retData = pd.read_csv(filename, delimiter)
@@ -50,7 +50,7 @@ def csvReader(filename: str, delimiter: str = ','):
         raise KeyError('Time data not found! Check Header')
 
     # Return dose, concentration and time data
-    return np.array(doseData), np.array(concData), np.array(timeData)
+    return compData(concData, timeData, doseData)
 
 
 def dataReader(filename: str):
@@ -59,7 +59,7 @@ def dataReader(filename: str):
     :param filename: Name of the file to read
     :type filename: str
     :return: Dose data, Concentration data, Time data
-    :rtype: numpy.ndarray, numpy.ndarray. numpy.ndarray
+    :rtype: compData
     """
     # Check extension of given filename
     nameAsList = filename.split('.')
