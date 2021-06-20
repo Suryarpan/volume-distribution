@@ -4,12 +4,14 @@ Comparison With Known Data
 Known Data
 ==========
 
-Known data is a database containing names and related V\ :sub:`d` \ values of various drugs. It is also an .csv file.
+Known data is a dataset containing names and related V\ :sub:`d` \ values of various drugs. It is also an .csv file. The delimeter should be comma (,). The fields should be as followed.
 
 .. csv-table::
     :header: File type, Name Data, :math:`V_d` Data
 
-    csv, Name, V
+    csv, Name / NAME / name, V / Volume_Distribution / VOLUME_DISTRIBUTION / volume_distribution / V_d
+
+In order to use the program, it has to be made sure that the data consists of the above written headings.
 
 .. caution::
     Entertaining other headings will not work.
@@ -51,12 +53,10 @@ After the successful completion of the program, one file will be generated. Deta
     File name, Comparison_Dataset
     File type, .xlsx
     Sheet Name, Comparison Sheet
-    Column, Name and V
+    Column, As provided in the known data
     Row, Index numbers from parent dataset
 
-Below is an image of exported data sheet (the sample and corresponding Volume Distribution value is highlighted)
+An Insight to the Function Used
+===============================
 
-.. image:: images/Comparison_Dataset.png
-
-.. note::
-    In original exported version, the sample and volume Distribution value will not be highlighted.
+#. :func:`comparison.comparison`

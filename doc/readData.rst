@@ -65,5 +65,4 @@ An insight to Function Used
 
 A custom function was made to take the data from the csv file. Details are given below:
 
-.. automodule:: reader
-   :members:
+:func:`reader.dataReader`

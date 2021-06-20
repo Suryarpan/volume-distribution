@@ -1,6 +1,5 @@
-Custom Class Generation
-***********************
-A custom class is made inorder to compactify the data. Details are provided below:
+Stuctured Computational Data
+*****************************
+A custom class to aggreagate computational data and methods for necessary algoritham
 
-.. automodule:: compData
-    :members:
+:class:`compData.compData`

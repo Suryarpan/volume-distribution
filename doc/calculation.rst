@@ -33,24 +33,17 @@ Manipulating Necessary Parameters
 .. note::
     If :math:`C` and :math:`T` starts from 0, then program will try to compute :math:`ln(0)`, which is undefined.
 
-.. note::
-    This is the general procedure. I've calculated it with previously defined methods
-
 Calculating Volume Distribution
 ===============================
 
 #. :math:`V_{area}` is calculated by the formula 
     .. math::
         \frac{X}{K_{el} \times AUC}
-#. :math:`V_{ss}` is calculated by the formule
+#. :math:`V_{ss}` is calculated by the formula
     .. math::
-        \frac{X}{AUC} \times MRT  
-
-.. note::
-    This is the general procedure. I've calculated it with previously defined methods
+        \frac{X}{AUC} \times MRT
 
 An Insight to the Function Used
 ===============================
 
-.. automodule:: findDistribution
-    :members:
+#. :func:`findDistribution.findDistribution`
