@@ -34,7 +34,8 @@ release = '0.1.0'
 extensions = [
     'sphinx.ext.mathjax',
     'sphinx.ext.autodoc',
-    'autoapi.extension'
+    'autoapi.extension',
+    'sphinx_search.extension'
 ]
 
 autodoc_typehints = 'description'
@@ -47,7 +48,6 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
-
 
 
 pygments_style = 'sphinx'
