@@ -63,6 +63,4 @@ A sample data table is like followed
 An insight to Function Used
 ===========================
 
-A custom function was made to take the data from the csv file. Details are given below:
-
-:func:`reader.dataReader`
+#. :func:`reader.dataReader`
